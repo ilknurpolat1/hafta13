@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center; font-family:sans-serif;">
+
+<h2>Bahis Oyunu</h2>
+
+<p id="resultText">Bahis yap</p>
+
+<img id="walletImage" src="" style="width:300px"><br><br>
+
+<button onclick="bahisYap('fenerbahce')">Fenerbahçe</button>
+<button onclick="bahisYap('galatasaray')">Galatasaray</button>
+
+<script>
+  function bahisYap(takim) {
+    var sans = Math.random();
+    var kazandi = sans < 0.5;
+
+    if (takim === "fenerbahce") {
+      if (kazandi) {
+        document.getElementById("walletImage").src = "https://cf.kizlarsoruyor.com/q19949320/32909e39-01ab-4d0e-b463-8ceab0844a9b-or.jpg";
+        document.getElementById("resultText").innerText = "Fenerbahçe kazandı! ";
+      } else {
+        document.getElementById("walletImage").src = "https://media.istockphoto.com/id/594481556/tr/foto%C4%9Fraf/showing-an-empty-wallet.jpg?s=1024x1024&w=is&k=20&c=QpRZLHa8FO7XIAWYN3SPQQWhXlERmcOgOROXUKG8qu0=";
+        document.getElementById("resultText").innerText = "Fenerbahçe kaybetti! Cüzdan boş ";
+      }
+    }
+
+    if (takim === "galatasaray") {
+      if (kazandi) {
+        document.getElementById("walletImage").src = "https://cf.kizlarsoruyor.com/q19949320/32909e39-01ab-4d0e-b463-8ceab0844a9b-or.jpg";
+        document.getElementById("resultText").innerText = "Galatasaray kazandı! ";
+      } else {
+        document.getElementById("walletImage").src = "https://media.istockphoto.com/id/594481556/tr/foto%C4%9Fraf/showing-an-empty-wallet.jpg?s=1024x1024&w=is&k=20&c=QpRZLHa8FO7XIAWYN3SPQQWhXlERmcOgOROXUKG8qu0=";
+        document.getElementById("resultText").innerText = "Galatasaray kaybetti! Cüzdan boş ";
+      }
+    }
+  }
+</script>
+
+</body>
+</html>
