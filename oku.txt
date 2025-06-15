@@ -1,0 +1,1 @@
+Derste w3school üzerinden lamba örneğini açtık nasıl çalıştığına baktıktan sonra bu projede olan kod örneğini onun üzerinden değiştirdik cüzdan görselleri almamızı istediği için web üzerinden cüzdan görseli bularak if else komutları ile çalışmasını sağladık. Daha öncesinde yaptığımız skor örneğinden dolayı yaptırdığını hoca dile getirmişti.
